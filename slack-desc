@@ -1,0 +1,15 @@
+opensc: OpenSC (SmartCard utilities with support for PKCS#11 and PKCS#15)
+opensc:
+opensc: OpenSC provides a set of libraries and utilities to work with smart
+opensc: cards.  Its main focus is on cards that support cryptographic
+opensc: operations, and facilitate their use in security applications such
+opensc: as authentication, mail encryption and digital signatures.  OpenSC
+opensc: implements the  PKCS#11 API so applications supporting this API
+opensc: (such as Mozilla Firefox and Thunderbird) can use it.  On the card
+opensc: OpenSC implements the PKCS#15 standard and aims to be compatible
+opensc: with every software/card that does so, too.
+opensc: OpenSC is written by an international team and is licensed as
+opensc: Open Source software under the LGPL license version 2.1 of
+opensc: the License, or (at your option) any later version.
+opensc:
+opensc: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
