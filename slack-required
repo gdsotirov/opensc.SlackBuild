@@ -1,7 +1,7 @@
-glibc-solibs >= 2.11.1
-libtool >= 2.2.6b
-ncurses >= 5.7
-openssl >= 0.9.8n | openssl-solibs >= 0.9.8n
-pcsc-lite >= 1.5.5
+glibc-solibs >= 2.13
+libtool >= 2.4.2
+ncurses >= 5.9
+openssl >= 0.9.8za | openssl-solibs >= 0.9.8za
+pcsc-lite >= 1.8.3
 readline >= 5.2
-zlib >= 1.2.3
+zlib >= 1.2.5
