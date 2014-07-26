@@ -2,5 +2,6 @@ glibc-solibs >= 2.11.1
 libtool >= 2.2.6b
 ncurses >= 5.7
 openssl >= 0.9.8n | openssl-solibs >= 0.9.8n
+pcsc-lite >= 1.5.5
 readline >= 5.2
 zlib >= 1.2.3
