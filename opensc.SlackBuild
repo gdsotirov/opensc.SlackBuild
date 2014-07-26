@@ -19,13 +19,13 @@
 #
 # Visit SlackPack at http://sotirov-bg.net/slackpack/
 #
-# $Id: opensc.SlackBuild,v 1.3 2014/07/26 09:27:16 gsotirov Exp $
+# $Id: opensc.SlackBuild,v 1.4 2014/07/26 10:51:27 gsotirov Exp $
 #
 
 . ../../slack-package.conf
 
 NAME=opensc
-VERSION=0.11.13
+VERSION=0.12.2
 BUILD=${BUILD:-1}
 ARCH=${ARCH:-i486}
 
@@ -69,11 +69,10 @@ CXXFLAGS=$SLKCFLAGS \
             --enable-static=no \
             --enable-zlib \
             --enable-readline \
-            --enable-iconv \
             --enable-openssl \
             --enable-pcsc \
-            --enable-nsplugin \
-            --enable-doc || exit 1
+            --enable-doc \
+            --with-xsl-stylesheetsdir=/usr/share/xml/docbook/xsl-stylesheets-1.75.2 || exit 1
 
 # Build & install
 make -j4 || exit 2
