@@ -19,7 +19,7 @@
 #
 # Visit SlackPack at http://sotirov-bg.net/slackpack/
 #
-# $Id: opensc.SlackBuild,v 1.4 2014/07/26 10:51:27 gsotirov Exp $
+# $Id: opensc.SlackBuild,v 1.5 2014/07/26 10:57:33 gsotirov Exp $
 #
 
 . ../../slack-package.conf
@@ -65,6 +65,7 @@ CXXFLAGS=$SLKCFLAGS \
             --localstatedir=/var \
             --mandir=/usr/man \
             --docdir=/usr/doc/$NAME-$VERSION \
+            --libdir=/usr/lib${LIBDIRSUFFIX} \
             --enable-shared=yes \
             --enable-static=no \
             --enable-zlib \
