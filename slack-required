@@ -1,6 +1,10 @@
-glibc-solibs >= 2.23
-ncurses >= 5.9
-openssl >= 1.0.2h | openssl-solibs >= 1.0.2h
-pcsc-lite >= 1.8.18
-readline >= 6.3
-zlib >= 1.2.8
+aaa_glibc-solibs >= 2.33
+glib2 >= 2.70.3
+libffi >= 3.3
+ncurses >= 6.3
+openssl >= 1.1.1m | openssl-solibs >= 1.1.1m
+pcre >= 8.45
+pcsc-lite >= 1.9.9
+readline >= 8.1.002
+util-linux >= 2.37.3
+zlib >= 1.2.11
