@@ -55,8 +55,8 @@ cd $SRC
 fix_source
 
 # Configure
-CFLAGS="$SLKCFLAGS" \
-CXXFLAGS="$SLKCFLAGS" \
+CFLAGS="$SLKCFLAGS -O2" \
+CXXFLAGS="$SLKCFLAGS -O2" \
 ./configure --build="${ARCH}-slackware-linux" \
             --host="${ARCH}-slackware-linux" \
             --prefix=/usr \
