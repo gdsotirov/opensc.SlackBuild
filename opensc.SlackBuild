@@ -23,7 +23,7 @@
 . ../../slack-package.conf
 
 NAME=opensc
-VERSION=0.24.0
+VERSION=0.25.0
 STYLESHEETS_DIR="/usr/share/xml/docbook/xsl-stylesheets-1.79.2"
 ARCH=${ARCH:-i586}
 BUILD=${BUILD:-1}
@@ -53,6 +53,9 @@ cd $TMP
 tar --extract --verbose --file=$CWD/${NAME}-${VERSION}.tar.gz || exit 3
 cd $SRC
 fix_source
+# Download ... missing from release archive
+# See https://github.com/OpenSC/OpenSC/issues/3062
+( cd doc; wget 'https://raw.githubusercontent.com/OpenSC/OpenSC/master/doc/docbook-utf8.xsl' )
 
 # Configure
 CFLAGS="$SLKCFLAGS -O2" \
