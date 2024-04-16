@@ -23,7 +23,7 @@
 . ../../slack-package.conf
 
 NAME=opensc
-VERSION=0.25.0
+VERSION=0.25.1
 STYLESHEETS_DIR="/usr/share/xml/docbook/xsl-stylesheets-1.79.2"
 ARCH=${ARCH:-i586}
 BUILD=${BUILD:-1}
